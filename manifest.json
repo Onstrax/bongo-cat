@@ -1,11 +1,10 @@
 {
-	"id": "obsidian-bongo-cat",
-	"name": "Bongo cat view",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "A Bongo cat that hits the drums when you type.",
-	"author": "Onstrax",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
-	"isDesktopOnly": true
+    "id": "obsidian-bongo-cat",
+    "name": "Bongo Cat View",
+    "version": "1.0.0",
+    "minAppVersion": "0.15.0",
+    "description": "A cute Bongo Cat in your sidebar that drums while you type, with idle and sleep states.",
+    "author": "Onstrax",
+    "authorUrl": "https://github.com/Onstrax",
+    "isDesktopOnly": true
 }
