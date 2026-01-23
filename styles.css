@@ -1,0 +1,14 @@
+.bongo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+
+#bongo-cat-img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: pixelated; /* Para que se vea nítido si es pixel art */
+}

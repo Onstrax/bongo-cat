@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-bongo-cat",
+	"name": "Bongo cat view",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "A Bongo cat that hits the drums when you type.",
+	"author": "Onstrax",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": true
+}
