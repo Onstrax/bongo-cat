@@ -1,5 +1,5 @@
 {
-    "name": "obsidian-bongo-cat",
+    "name": "bongo-cat",
     "version": "1.0.0",
     "description": "A cute Bongo Cat view for Obsidian that drums along with your typing.",
     "main": "main.js",

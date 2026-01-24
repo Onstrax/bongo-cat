@@ -25,7 +25,7 @@ Give your sidebar a companion! This plugin adds a cute Bongo Cat that reacts to 
 If you want to install this plugin manually:
 
 1. Download `main.js`, `manifest.json`, and `styles.css` from the [Latest Release](https://github.com/Onstrax/obsidian-bongo-cat/releases).
-2. Create a folder named `obsidian-bongo-cat` in your vault's plugin folder: `<vault>/.obsidian/plugins/`.
+2. Create a folder named `bongo-cat` in your vault's plugin folder: `<vault>/.obsidian/plugins/`.
 3. Move the downloaded files into that folder.
 4. Reload Obsidian and enable the plugin in **Settings -> Community Plugins**.
 

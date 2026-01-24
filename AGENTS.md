@@ -49,13 +49,13 @@ The plugin uses a sophisticated timing system in `view.ts`:
 
 ## Manifest rules (`manifest.json`)
 
-* **ID**: `obsidian-bongo-cat`
+* **ID**: `bongo-cat`
 * **Version**: Follows SemVer.
 * **isDesktopOnly**: `true` (due to focus on sidebar view interactions).
 
 ## Testing & Deployment
 
-* **Manual Install**: Copy `main.js`, `manifest.json`, and `styles.css` to `<Vault>/.obsidian/plugins/obsidian-bongo-cat/`.
+* **Manual Install**: Copy `main.js`, `manifest.json`, and `styles.css` to `<Vault>/.obsidian/plugins/bongo-cat/`.
 * **Releases**: Assets must be attached individually to the GitHub Release (not zipped).
 
 ## Security & Privacy
