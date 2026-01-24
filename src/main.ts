@@ -23,7 +23,7 @@ export default class BongoCatPlugin extends Plugin {
 
 		// Comando para abrir la vista
 		this.addCommand({
-			id: "open-bongo-cat",
+			id: "open-view",
 			name: "Open bongo cat",
 			callback: () => {
 				void this.activateView();
