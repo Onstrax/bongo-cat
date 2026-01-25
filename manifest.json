@@ -1,7 +1,7 @@
 {
     "id": "bongo-cat",
     "name": "Bongo Cat View",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "minAppVersion": "0.15.0",
     "description": "A cute Bongo Cat in your sidebar that drums while you type, with idle and sleep states.",
     "author": "Onstrax",
