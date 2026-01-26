@@ -35,20 +35,22 @@ export class BongoCatView extends ItemView {
 		return "cat";
 	}
 
-	async onOpen() {
+	async onOpen(): Promise<void> {
 		const container = this.containerEl.children[1];
-		if (!(container instanceof HTMLElement)) return;
+		if (!(container instanceof HTMLElement)) {
+			await Promise.resolve();
+			return;
+		}
 
 		container.empty();
 		const catContainer = container.createDiv({ cls: "bongo-container" });
 
-		// Estado inicial: Both up
 		this.imgElement = catContainer.createEl("img", {
 			attr: { src: IDLE_UP, id: "bongo-cat-img" },
 		});
 
-		// Al abrir, programamos el timer de 5s para pasar a both-down
 		this.startDeepIdleTimer();
+		await Promise.resolve();
 	}
 
 	// El método que anima al gato
@@ -88,7 +90,8 @@ export class BongoCatView extends ItemView {
 		this.deepIdleTimer = null;
 	}
 
-	async onClose() {
+	async onClose(): Promise<void> {
 		this.clearAllTimers();
+		await Promise.resolve();
 	}
 }

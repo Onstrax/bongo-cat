@@ -65,7 +65,6 @@ export default class BongoCatPlugin extends Plugin {
 			if (!rightLeaf) return;
 
 			leaf = rightLeaf;
-			// 2. Aquí ya estamos usando await, esto está bien
 			await leaf.setViewState({
 				type: VIEW_TYPE_BONGO_CAT,
 				active: true,
