@@ -1,45 +1,84 @@
-# Bongo Cat View for Obsidian
+# 🐾 Bongo Cat View for Obsidian
 
-Give your sidebar a companion! This plugin adds a cute Bongo Cat that reacts to your typing in real-time with fluid animations and smart idle states.
+Give your sidebar the companion it deserves! **Bongo Cat View** brings a reactive, customizable, and 100% private companion to your workspace that drums along as you type.
 
-![Bongo Cat Preview](https://raw.githubusercontent.com/saatvik333/wayland-bongocat/main/assets/bongo-cat-both-up.png)
+## ✨ Key Features
 
-## Features
+* **Real-Time Reactive Typing**: The cat drums its paws instantly as you type in any editor leaf.
+* **Smart Animation States**:
+* **Work Mode**: Rapidly alternates paws during active typing.
+* **Idle (Customizable)**: Raises both paws after a period of inactivity.
+* **Deep Idle (Customizable)**: Rests both paws on the desk for a "sleep" state.
 
-- **Reactive Typing**: The cat drums along as you write in any note.
-- **Smart Animation States**:
-  - **Work Mode**: Alternates paws quickly while you are actively typing.
-  - **Idle (1s)**: The cat raises both paws after 1 second of inactivity.
-  - **Sleep (10s)**: The cat rests both paws on the table after 10 seconds of inactivity.
-- **Local & Private**: All assets are embedded as Base64 strings. No internet connection is required, and no data ever leaves your vault.
-- **Performance Optimized**: Uses debounced timers to ensure smooth transitions without impacting editor speed.
+* **Total Customization**:
+* **Resize**: Adjust the cat's size to fit your sidebar perfectly.
+* **Custom Sprites**: Swap the default cat for your own images using Base64 strings.
+* **Live Refresh**: Changes in settings apply instantly to the view—no restart required.
 
-## How to Use
-
-1. **Open the View**: Click the **Cat icon** in the left ribbon (sidebar).
-2. **Start Typing**: Open any note and start writing. The cat will automatically detect your keystrokes.
-3. **Customize**: You can find basic settings in the plugin settings tab.
-
-## Manual Installation
-
-If you want to install this plugin manually:
-
-1. Download `main.js`, `manifest.json`, and `styles.css` from the [Latest Release](https://github.com/Onstrax/obsidian-bongo-cat/releases).
-2. Create a folder named `bongo-cat` in your vault's plugin folder: `<vault>/.obsidian/plugins/`.
-3. Move the downloaded files into that folder.
-4. Reload Obsidian and enable the plugin in **Settings -> Community Plugins**.
-
-## Development
-
-If you want to contribute or modify the plugin:
-
-- Install dependencies: `npm install`
-- Run in dev mode: `npm run dev`
-- Build for production: `npm run build`
-
-## License
-
-This project is licensed under the **ISC License**. See the `LICENSE` file for details.
+* **Privacy First**: 100% offline. No external network requests. All images are stored locally in your plugin settings.
 
 ---
-**Made with ❤️ for the Obsidian community by [Onstrax](https://github.com/Onstrax)**
+
+## ⚙️ Customization
+
+Bongo Cat is fully adaptable to your aesthetic. Navigate to **Settings -> Community Plugins -> Bongo Cat View** to find:
+
+| Setting | Description |
+| --- | --- |
+| **Idle Timeout** | How many seconds before the cat raises its paws (supports decimals). |
+| **Deep Idle Timeout** | Seconds of inactivity before the cat goes into "sleep" mode. |
+| **Cat Size** | Adjust the width (px) of your companion. |
+| **Custom Sprites** | Paste your own **Base64 Data URI** strings to change the cat's appearance. |
+
+> [!TIP]
+> **Pro Tip**: Use a "Reset to Defaults" button in the settings if you want to revert to the original Bongo Cat look instantly.
+
+---
+
+## 🚀 How to Use
+
+1. **Open the View**: Click the **Cat icon** in the left ribbon or use the command `Open Bongo Cat`.
+2. **Placement**: Drag the Bongo Cat leaf to your preferred sidebar or location.
+3. **Write**: Start typing in any note, and watch your new friend go to work!
+
+---
+
+## 🛠 Installation
+
+### From the Marketplace (Coming Soon)
+
+1. Open **Settings** > **Community Plugins**.
+2. Click **Browse** and search for `Bongo Cat View`.
+3. Click **Install**, then **Enable**.
+
+### Manual Installation (Beta)
+
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [Latest Release](https://github.com/Onstrax/obsidian-bongo-cat/releases).
+2. Inside your vault, go to `.obsidian/plugins/` and create a folder named `obsidian-bongo-cat`.
+3. Move the files into that folder.
+4. Reload Obsidian and enable the plugin.
+
+---
+
+## 🔒 Technical Design & Privacy
+
+* **Zero Latency**: The animation logic is decoupled from the main editor thread to ensure zero impact on typing performance.
+* **No External Fetch**: Unlike other plugins, images are not fetched from GitHub or external CDNs. They are embedded as Base64, ensuring your vault remains functional even without an internet connection.
+* **Clean Cleanup**: All timers and event listeners are properly disposed of when the view is closed to prevent memory leaks.
+
+---
+
+## 🏗 Development
+
+If you'd like to build the plugin yourself:
+
+```bash
+npm install
+npm run build
+
+```
+
+---
+
+**Developed with ❤️ by [Onstrax**](https://github.com/Onstrax)
+*Inspired by the legendary Bongo Cat meme.*

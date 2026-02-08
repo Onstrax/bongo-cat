@@ -10,16 +10,15 @@ export default class BongoCatPlugin extends Plugin {
 	settings: BongoCatSettings;
 
 	async onload() {
-		// 2. Cargamos la configuración
 		await this.loadSettings();
+
+		this.registerView(
+			VIEW_TYPE_BONGO_CAT,
+			(leaf) => new BongoCatView(leaf, this.settings), // Pasamos las settings aquí
+		);
 
 		// 3. Añadimos la pestaña de ajustes
 		this.addSettingTab(new BongoCatSettingTab(this.app, this));
-		// Registrar la vista
-		this.registerView(
-			VIEW_TYPE_BONGO_CAT,
-			(leaf) => new BongoCatView(leaf),
-		);
 
 		// Comando para abrir la vista
 		this.addCommand({
